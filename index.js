@@ -1,7 +1,7 @@
 function decrease()
 {
-document.getElementById("value").innerHTML=parseInt(document.getElementById("value").innerHTML)-1;
-let temp=document.getElementById("value").innerHTML;
+document.getElementById("value").innerHTML=parseInt(document.getElementById("value").innerHTML,10)-1;
+let temp = parseInt(document.getElementById("value").innerHTML,10);
 if(temp<0)
 {
 document.getElementById("value").classList.add("red");
@@ -15,7 +15,7 @@ if(temp===0)
 }
 function increase()
 {
-document.getElementById("value").innerHTML=parseInt(document.getElementById("value").innerHTML)+1;
+document.getElementById("value").innerHTML=parseInt(document.getElementById("value").innerHTML,10)+1;
 let temp1=document.getElementById("value").innerHTML;
 if(temp1>0){
 document.getElementById("value").classList.add("green");
